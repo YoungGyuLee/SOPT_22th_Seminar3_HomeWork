@@ -18,15 +18,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val name : String = kakaoItems[index].name
         val profile : Int = kakaoItems[index].profile
 
-
         val intent : Intent = Intent(applicationContext, ChatActivity::class.java)
         intent.putExtra("name",name)
         intent.putExtra("profile",profile)
         startActivity(intent)
-
-
-
-
 
 
         // 리사이클러뷰의 몇번째를 클릭했는지 처리할 것
